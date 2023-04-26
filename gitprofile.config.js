@@ -4,7 +4,7 @@ const config = {
   github: {
     username: 'ravenusa', // Your GitHub org/user name. (Required)
     sortBy: 'updated', // stars | updated
-    limit: 6, // How many projects to display.
+    limit: 10, // How many projects to display.
     exclude: {
       forks: true, // Forked projects will not be displayed if set to true.
       projects: [], // These projects will not be displayed. example: ['my-project1', 'my-project2']
@@ -13,6 +13,7 @@ const config = {
   social: {
     linkedin: 'ravenusa',
     twitter: '',
+    mastodon: '',
     facebook: '',
     instagram: 'ravenusaarjuna',
     dribbble: '',
@@ -20,6 +21,8 @@ const config = {
     medium: '',
     dev: '',
     stackoverflow: '', // format: userid/username
+    skype: '',
+    telegram: '',
     website: 'https://ravenusa.github.io',
     phone: '',
     email: 'ravenusaa.k@gmail.com',
@@ -29,7 +32,20 @@ const config = {
       '', // Empty fileUrl will hide the `Download Resume` button.
   },
   skills: [
-    'Still Learning',
+    'PHP',
+    'Laravel',
+    'JavaScript',
+    'React.js',
+    'Node.js',
+    'Nest.js',
+    'MySQL',
+    'PostgreSQL',
+    'Git',
+    'Docker',
+    'PHPUnit',
+    'CSS',
+    'Antd',
+    'Tailwind',
   ],
   // experiences: [
   //   {
@@ -47,14 +63,14 @@ const config = {
   //     companyLink: 'https://example.com',
   //   },
   // ],
-  /* certifications: [
-    {
-      name: 'Lorem ipsum',
-      body: 'Lorem ipsum dolor sit amet',
-      year: 'March 2022',
-      link: 'https://example.com'
-    },
-  ], */
+  // /* certifications: [
+  //   {
+  //     name: 'Lorem ipsum',
+  //     body: 'Lorem ipsum dolor sit amet',
+  //     year: 'March 2022',
+  //     link: 'https://example.com'
+  //   },
+  // ], */
   // education: [
   //   {
   //     institution: 'Institution Name',
@@ -69,22 +85,40 @@ const config = {
   //     to: '2014',
   //   },
   // ],
-  // Display blog posts from your medium or dev account. (Optional)
-  blog: {
-    source: '', // medium | dev
-    username: '', // to hide blog section, keep it empty
-    limit: 3, // How many posts to display. Max is 10.
-  },
-  googleAnalytics: {
-    id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
-  },
+
+  // // To hide the `My Projects` section, keep it empty.
+  // externalProjects: [
+  //   {
+  //     title: 'Project Name',
+  //     description:
+  //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+  //     imageUrl: 'https://via.placeholder.com/250x250',
+  //     link: 'https://example.com',
+  //   },
+  //   {
+  //     title: 'Project Name',
+  //     description:
+  //       'Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed euismod, nunc ut.',
+  //     imageUrl: 'https://via.placeholder.com/250x250',
+  //     link: 'https://example.com',
+  //   },
+  // ],
+  // // Display blog posts from your medium or dev account. (Optional)
+  // blog: {
+  //   source: 'dev', // medium | dev
+  //   username: 'arifszn', // to hide blog section, keep it empty
+  //   limit: 2, // How many posts to display. Max is 10.
+  // },
+  // googleAnalytics: {
+  //   id: '', // GA3 tracking id/GA4 tag id UA-XXXXXXXXX-X | G-XXXXXXXXXX
+  // },
   // Track visitor interaction and behavior. https://www.hotjar.com
   hotjar: {
     id: '',
     snippetVersion: 6,
   },
   themeConfig: {
-    defaultTheme: 'valentine',
+    defaultTheme: 'emerald',
 
     // Hides the switch in the navbar
     // Useful if you want to support a single color mode
@@ -142,6 +176,13 @@ const config = {
       '--rounded-btn': '3rem',
     },
   },
+
+  // Optional Footer. Supports plain text or HTML.
+  footer: `Made with <a 
+      class="text-primary" href="https://github.com/arifszn/gitprofile"
+      target="_blank"
+      rel="noreferrer"
+    >GitProfile</a> and ❤️`,
 };
 
 export default config;
